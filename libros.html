@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Libros Ezequiel</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    </head>
+    <body>
+        <header class="header">
+            <nav class="menu">
+                <ul id="menu" class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="libros.html">Libros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        <h1 class="titulo">Libros Ezequiel</h1>
+        </header>
+        <section class="contenido">
+            <div id="buscador" class="buscador">
+                <form id="formulario" class="formulario">
+                    <div class="input-field">
+                        <label for="titulo" class="label-buscar">Titulo</label>
+                        <br>
+                        <input type="search" id="titulo" required>
+                        <br>
+                        <label for="autor" class="label-buscar">Autor</label>
+                        <br>
+                        <input type="search" id="autor">
+                        <br>
+                        <label for="editorial" class="label-buscar">Editorial</label>
+                        <br>
+                        <input type="search" id="editorial">
+                    </div>
+                    <button type="submit" class="button boton">Buscar Libro</button>
+                    <button type="button" class="button boton" onclick="historial()">Historial</button>
+                </form>
+            </div>
+            <div id="resultados">
+            </div>
+            <div id="mas-resultados" class="mas-resultados" hidden>
+            <button type="button" class="button boton" onclick="masResultados()">Mostrar mas</button>
+            </div>
+        </section>
+        <footer>
+            <p class="texto-footer">Copyright © 2019 Libros Ezequiel</p>
+        </footer>
+    </body>
+</html>

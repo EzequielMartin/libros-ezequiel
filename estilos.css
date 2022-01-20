@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    background-color:lightblue;
+    background-size:cover;
+}
+
+nav.menu{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight:lighter;
+    border-bottom: 1px solid white;
+}
+
+nav.menu li{
+    display: inline;
+    padding: 0 0.5em;
+}
+
+nav.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+nav.menu a:hover{
+    background-color: rgb(122, 200, 226);
+}
+
+#buscador{
+    border-bottom: 2px solid lightblue;
+    text-align: center;
+}
+
+.boton{
+    margin: 0.5em 0;
+}
+
+.label-buscar{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.titulo{
+    padding: 1em;
+    text-align: center;
+    font-size: 3em;
+}
+
+.contenido{
+    height: auto;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.boton-compartir{
+    margin: 0 0.5em;
+}
+
+div.form{
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+.texto-footer{
+    text-align: center;
+}
+
+#resultados{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.libro{
+    width: 20%;
+    padding: 0.5em;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 1em;
+}
+
+.tit_libro{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.aut_libro{
+    font-size: 1em;
+}
+
+.edi_libro{
+    font-size: 0.8em;
+}
+
+.mas-resultados{
+    text-align: center;
+    padding-top: 0.5em;
+    border-top: 2px solid lightblue;
+}
+
+footer{
+    background-color: lightblue;
+    padding: 0.5em; 
+}
+
+.tit_contacto{
+    font-weight: bold;
+}
+
+.subtitulo{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+#historial{
+    text-align: center;
+}
+
+@media screen and (max-width:1200px){
+    .libro{
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .libro{
+        min-width: 100%;
+    }
+    
+    nav.menu li{
+        display: block;
+    }
+}
